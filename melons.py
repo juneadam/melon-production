@@ -35,4 +35,9 @@ class Melon:
 class Squash(Melon):
     """Winter squash."""
 
-    # FIX ME: Add Squash class definition here.
+    def __init__(self, melon_type):
+        super().__init__(melon_type)
+
+    def prep(self):
+        super().prep()
+        robots.painterbot.paint(self)
